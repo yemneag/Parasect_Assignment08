@@ -10,15 +10,17 @@ import os
 
 class PDFUtilities:
     """
-    
-    
+        Create a PDF with some benchmark questions
     """
     def __init__(self):
         __file = ""
         
     def create_question_PDF(self, title, benchmark_name, questions):
         """
-        
+        Create a PDF with some benchmark questions
+        @param title String: The title that will appear in the PDF        
+        @param benchmark_name String: The folder in dataPackage where the PDF file should be saved
+        @questions list of dictionaries: The questions to include in the PDF
         """
         def create_paragraph(text):
             return Paragraph(text, styles["Normal"])

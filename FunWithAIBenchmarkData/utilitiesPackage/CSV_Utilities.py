@@ -1,3 +1,7 @@
+# CSV_Utilities.py
+# Bill Nicholson
+# nicholdw@ucmail.uc.edu
+
 import csv
 
 class MMLU_CSV_Processor:
@@ -41,16 +45,3 @@ class MMLU_CSV_Processor:
                 questions.append(question)
                 question_id += 1
       return questions
-
-    def process_data(self, data):
-        processed_data = data
-        return processed_data
-    '''
-    def write_csv(self, processed_data):
-        with open(self.output_file, 'w') as file:
-            csv.dump(processed_data, file, indent=2)
-    '''
-    def process_csv_files(self):
-        data = self.read_csv()
-        processed_data = self.process_data(data)
-        self.write_csv(processed_data)
