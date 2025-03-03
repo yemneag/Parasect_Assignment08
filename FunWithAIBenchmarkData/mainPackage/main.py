@@ -47,6 +47,7 @@ if __name__ == "__main__":
     print(questions_written, "questions written to the file.")
     
     """
+    # This code is commented out
     #Reading_Level.test01()
 
     text = "This is a sentence that we can use to test the reading level computations. "
