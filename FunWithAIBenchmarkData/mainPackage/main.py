@@ -2,12 +2,26 @@
 # Bill Nicholson
 # nicholdw@ucmail.uc.edu
 
+from chartPackage.chart import LetterFrequency
 from readingLevelPackage.readingLevel import Reading_Level
 from utilitiesPackage.utilities import *
 from utilitiesPackage.CSV_Utilities import *
 from PDFPackage.PDFUtilities import *
+from imagePackage.image import *
+from chartPackage.chart import *
 
 if __name__ == "__main__":
+    #Team Image Generator
+    image_url = "https://img.pokemondb.net/artwork/large/parasect.jpg"
+    image_fetcher = ImageFetcher(url=image_url, size=(200, 200), save_path="parasect_200x200.png")
+    image_fetcher.fetch_and_process_image()
+
+    #Chart Generator
+    file_path = r"C:\Users\Abel\source\repos\yemaneag_Assignment088\FunWithAIBenchmarkData\dataPackage\MMLU\data\nutrition_test.csv"
+    letterfreq = LetterFrequency(file_path)
+    letterfreq.display_data()
+    letterfreq.plot_letter_frequency()
+
 
     CSV_Processor = MMLU_CSV_Processor("dataPackage/MMLU/data/", ["management_test.csv"])
     questions = CSV_Processor.read_data()

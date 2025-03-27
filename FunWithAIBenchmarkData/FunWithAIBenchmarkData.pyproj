@@ -21,7 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="chartPackage\chart.py" />
+    <Compile Include="chartPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="dataPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="imagePackage\image.py" />
+    <Compile Include="imagePackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
@@ -51,10 +59,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="chartPackage\" />
     <Folder Include="dataPackage\" />
     <Folder Include="dataPackage\MMLU\" />
     <Folder Include="dataPackage\MMLU\data\" />
     <Folder Include="dataPackage\MMLU\results\" />
+    <Folder Include="imagePackage\" />
     <Folder Include="mainPackage\" />
     <Folder Include="PDFPackage\" />
     <Folder Include="readingLevelPackage\" />
