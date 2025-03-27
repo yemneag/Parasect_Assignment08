@@ -9,7 +9,7 @@
 # Brief Description of the assignment: This assignment teaches us how to visualize data and import pictures into python.
 
 # Brief Description of what this module does. This module teaches us how to work with and manipulate data.
-# Citations: I used 
+# Citations: I used ChatGPT
 
 import pandas as pd
 import matplotlib.pyplot as plt
